@@ -34,7 +34,7 @@ jobs:
           git config --local user.name jhkersting
           git config --local user.email jhkersting@crimson.ua.edu
           git add --all
-          git commit -am "GH ACTION Headlines $(date)"
+          git commit -m "HI"
           git push origin main
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}
