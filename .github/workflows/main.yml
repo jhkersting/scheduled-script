@@ -29,13 +29,12 @@ jobs:
       - name: Run Script
         run: python test.py
         
-      - name: Commit changes
-        uses: EndBug/add-and-commit@v9
-        with:
-          author_name: jhkersting
-          author_email: jhkersting@crimson.ua.edu
-          message: 'Your commit message'
-          add: '-A'
+      - name: Commit report
+        run: |
+          git config --global user.name 'Your Name'
+          git config --global user.email 'your-username@users.noreply.github.com'
+          git commit -am "Automated report"
+          git push
       
       
           
