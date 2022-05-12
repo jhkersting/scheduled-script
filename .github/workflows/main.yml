@@ -29,15 +29,13 @@ jobs:
       - name: Run Script
         run: python test.py
         
-      - name: Commit report
-        run: |
-          git config --global user.name 'jhkersting'
-          git config --global user.email 'jhkersting@crimson.ua.edu'
-          git commit -am "Automated report"
-          git push
-      - uses: actions/checkout@v2
+      - name: Commit changes
+        uses: EndBug/add-and-commit@v9
         with:
-          token: ${{ secrets.PAT }
+          author_name: jhkersting
+          author_email: mail@example.com
+          message: 'Your commit message'
+          add: '-A'
       
       
           
