@@ -32,7 +32,7 @@ jobs:
       - name: Commit Files
         run:
           git add -A
-          git commit -m "HI"
+          git commit -am "HI"
           git push 
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}
