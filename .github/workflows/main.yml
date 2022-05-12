@@ -27,7 +27,7 @@ jobs:
           path : "requirements.txt"
         
       - name: Run Script
-        run: test.py
+        run: python test.py
         
       - name: Commit Files
         run:
