@@ -15,10 +15,10 @@ fund_weight = 40
 exp_weight = 20
 today = datetime.datetime.now()
 
-df = pd.read_csv("~/Desktop/data/2022-senate/data.csv", low_memory=False)
-candidates = pd.read_csv("~/Desktop/data/2022-senate/senate-candidates.csv", low_memory=False)
-generic_ballot = pd.read_csv("~/Desktop/data/data/generic-ballot.csv", low_memory=False)
-biden_approval = pd.read_csv("~/Desktop/data/data/biden-approval.csv", low_memory=False)
+df = pd.read_csv("2022-senate/data.csv", low_memory=False)
+candidates = pd.read_csv("2022-senate/senate-candidates.csv", low_memory=False)
+generic_ballot = pd.read_csv("data/generic-ballot.csv", low_memory=False)
+biden_approval = pd.read_csv("data/biden-approval.csv", low_memory=False)
 
 exp_scale = pd.DataFrame([
     {"rating": "Tossup", "margin": 0},
@@ -149,6 +149,6 @@ for i, d in unique_results.iterrows():
     unique_results.at[i, "prob"] = count / sims * 100
 
 unique_results = unique_results.drop_duplicates()
-unique_results.to_csv("~/Desktop/data/2022-senate/unique-results.csv", index=False)
-candidates.to_csv("~/Desktop/data/2022-senate/candidates-output.csv", index=False)
+unique_results.to_csv("2022-senate/unique-results.csv", index=False)
+candidates.to_csv("2022-senate/candidates-output.csv", index=False)
 print("--- %s seconds ---" % (time.time() - start_time))
