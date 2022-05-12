@@ -29,14 +29,15 @@ jobs:
       - name: Run Script
         run: python test.py
         
-      - name: Commit Files
-        run:
-          git add -A
-          git commit -am "HI"
-          git push 
-        env:
-          REPO_KEY: ${{secrets.GITHUB_TOKEN}}
-          username: github-actions
+      - name: Commit report
+        run: |
+          git config --global user.name 'jhkersting'
+          git config --global user.email 'jhkersting@crimson.ua.edu'
+          git commit -am "Automated report"
+          git push
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PAT }
       
       
           
