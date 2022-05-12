@@ -9,7 +9,7 @@ import datetime
 start_time = time.time()
 dem_seats = 36
 rep_seats = 29
-sims = 100
+sims = 10000
 national_third_party = 2.5
 fund_weight = 40
 exp_weight = 20
