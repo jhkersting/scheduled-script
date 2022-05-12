@@ -1,5 +1,4 @@
 pandas==1.2.3
-math==3.0
 random==3.0
 time==3.0
 dateutil==3.0
