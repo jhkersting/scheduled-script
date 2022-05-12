@@ -27,7 +27,7 @@ jobs:
           path : "requirements.txt"
         
       - name: Run Script
-        run: python test.py
+        run: python models/2022-senate-forecast.py
         
       - name: Commit report
         run: |
