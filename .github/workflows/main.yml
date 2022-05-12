@@ -33,8 +33,12 @@ jobs:
         run: |
           git config --global user.name 'jhkersting'
           git config --global user.email 'jhkersting@crimson.ua.edu'
+          git add -A
           git commit -am "Automated report"
           git push
+        env:
+          REPO_KEY: ${{secrets.GITHUB_TOKEN}}
+          username: github-actions
       
       
           
