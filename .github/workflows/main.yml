@@ -31,11 +31,9 @@ jobs:
         
       - name: Commit Files
         run:
-          git config --local user.name jhkersting
-          git config --local user.email jhkersting@crimson.ua.edu
-          git add --all
+          git add -A
           git commit -m "HI"
-          git push origin main
+          git push 
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}
           username: github-actions
