@@ -33,7 +33,7 @@ jobs:
         uses: EndBug/add-and-commit@v9
         with:
           author_name: jhkersting
-          author_email: mail@example.com
+          author_email: jhkersting@crimson.ua.edu
           message: 'Your commit message'
           add: '-A'
       
