@@ -1,6 +1,4 @@
 pandas==1.2.3
-random==3.0
-time==3.0
 dateutil==3.0
 scipy==1.6.1
 datetime==3.0
