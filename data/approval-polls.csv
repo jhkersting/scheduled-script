@@ -1,15 +1,27 @@
 pollster,grade,population,end_date,yes,sample_size,no,pollster_rating_id
+Rasmussen (Pulse Opinion Research),0.93,lv,2022-05-12,41.0,1500.0,57.0,277
+Rasmussen (Pulse Opinion Research),0.93,lv,2022-05-11,40.0,1500.0,58.0,277
 Ipsos,1.05,a,2022-05-10,42.39,1005.0,50.39,154
 YouGov,0.93,rv,2022-05-10,42.0,1361.0,51.0,391
 Rasmussen (Pulse Opinion Research),0.93,lv,2022-05-10,40.0,1500.0,59.0,277
+Morning Consult,1.0,a,2022-05-10,41.0,45000.0,51.0,218
 Morning Consult,1.0,rv,2022-05-09,42.0,2005.0,55.0,218
 Rasmussen (Pulse Opinion Research),0.93,lv,2022-05-09,41.0,1500.0,57.0,277
+Global Strategy Group/GBAO/Navigator Research,0.9,rv,2022-05-09,44.0,999.0,53.0,413
+Monmouth U.,1.0,rv,2022-05-09,39.0,751.0,56.0,215
+Morning Consult,1.0,a,2022-05-09,41.0,45000.0,51.0,218
 Rasmussen (Pulse Opinion Research),0.93,lv,2022-05-08,43.0,1500.0,55.0,277
+Morning Consult,1.0,a,2022-05-08,43.0,2210.0,52.0,218
+Morning Consult,1.0,a,2022-05-08,41.0,45000.0,51.0,218
+Morning Consult,1.0,a,2022-05-07,41.0,45000.0,51.0,218
 TIPP,1.3,a,2022-05-06,39.0,1320.0,47.0,144
 Engine Insights,1.0,rv,2022-05-06,43.6,833.0,52.6,37
 YouGov,0.93,rv,2022-05-06,43.0,1215.0,54.0,391
+Morning Consult,1.0,a,2022-05-06,41.0,45000.0,51.0,218
 Rasmussen (Pulse Opinion Research),0.93,lv,2022-05-05,45.0,1500.0,53.0,277
+Morning Consult,1.0,a,2022-05-05,41.0,45000.0,51.0,218
 Rasmussen (Pulse Opinion Research),0.93,lv,2022-05-04,43.0,1500.0,55.0,277
+Morning Consult,1.0,a,2022-05-04,41.0,45000.0,51.0,218
 Morning Consult,1.0,rv,2022-05-03,44.0,1955.0,54.0,218
 Ipsos,1.05,a,2022-05-03,44.35,1005.0,49.6,154
 Rasmussen (Pulse Opinion Research),0.93,lv,2022-05-03,42.0,1500.0,56.0,277
