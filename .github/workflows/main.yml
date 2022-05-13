@@ -25,8 +25,14 @@ jobs:
         uses: py-actions/py-dependency-install@v2
         with:
           path : "requirements.txt"
+          
+      - name: Run Gen Ballot
+        run: python models/general-ballot.py  
+      
+      - name: Run Biden Approval
+        run: python models/biden-approval.py
         
-      - name: Run Script
+      - name: Run Senate Forecast
         run: python models/2022-senate-forecast.py
         
       - name: Commit report
