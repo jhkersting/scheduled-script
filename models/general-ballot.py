@@ -12,8 +12,6 @@ ssl._create_default_https_context = ssl._create_unverified_context
 print("GEN BALLOT")
 # STARTING VARIABLES #
 start_time = time.time()
-candidates = ["Terry R. McAuliffe", "Glenn Youngkin", "Princess Blanding"]
-parties = ["DEM", "REP", "OTH"]
 #start_date = dtime.datetime(2021, 4, 1)  # RERUN ALL SIMULATIONS
 start_date = dtime.datetime.now()  # RUN TODAY SIMULATIONS
 election_date = dtime.datetime(2021, 11, 3)
@@ -34,8 +32,8 @@ pop_val = {'pop': ['v', 'lv', 'rv', 'a', ''], 'value': [1, 1, .67, .5, .5]}
 pop_val_df = pd.DataFrame(pop_val)
 df = pd.read_csv("https://projects.fivethirtyeight.com/polls-page/data/generic_ballot_polls.csv", low_memory=False,
                  parse_dates=['end_date', 'created_at'])
-psters = pd.read_csv("~/Desktop/data/data/pollster-ratings.csv", low_memory=False)
-output = pd.read_csv("~/Desktop/data/data/generic-ballot.csv", low_memory=False, )
+psters = pd.read_csv("data/pollster-ratings.csv", low_memory=False)
+output = pd.read_csv("data/generic-ballot.csv", low_memory=False, )
 
 for index, row in df.iterrows():
     popv = pop_val_df[pop_val_df['pop'] == row["population"]]['value'].values[0]
@@ -97,4 +95,4 @@ for z in range(num_days + 1):
     print(sim_date, ":", avgs["margin"][0])
     output = output.append(avgs, ignore_index=True)
 
-output.to_csv('~/Desktop/data/data/generic-ballot.csv', index=False, header=True)
+output.to_csv('data/generic-ballot.csv', index=False, header=True)
