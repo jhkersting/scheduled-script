@@ -30,8 +30,8 @@ pop_val = {'pop': ['v', 'lv', 'rv', 'a', ''], 'value': [1, 1, .67, .5, .5]}
 pop_val_df = pd.DataFrame(pop_val)
 df = pd.read_csv("https://projects.fivethirtyeight.com/polls-page/data/president_approval_polls.csv", low_memory=False,
                  parse_dates=['end_date', 'created_at'])
-psters = pd.read_csv("~/Desktop/data/data/pollster-ratings.csv", low_memory=False)
-output = pd.read_csv("~/Desktop/data/data/biden-approval.csv", low_memory=False)
+psters = pd.read_csv("data/pollster-ratings.csv", low_memory=False)
+output = pd.read_csv("data/biden-approval.csv", low_memory=False)
 
 for index, row in df.iterrows():
     popv = pop_val_df[pop_val_df['pop'] == row["population"]]['value'].values[0]
@@ -110,6 +110,6 @@ for i in p_ids:
         pd.DataFrame({'pollster': [i], 'polls': [len(p_polls)], 'bias': [round(p_polls["bias"].mean(), 2)]}))"""
 
 
-output.to_csv('~/Desktop/data/data/biden-approval.csv', index=False, header=True)
-p_output.to_csv('~/Desktop/data/data/approval-polls.csv', index=False, header=True)
+output.to_csv('data/biden-approval.csv', index=False, header=True)
+p_output.to_csv('data/approval-polls.csv', index=False, header=True)
 # p_bias.to_csv('~/Desktop/python/data/pollster-approval-bias.csv', index=False, header=True)
