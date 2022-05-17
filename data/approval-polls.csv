@@ -1,4 +1,6 @@
 pollster,grade,population,end_date,yes,sample_size,no,pollster_rating_id
+Bullfinch,0.6,rv,2022-05-16,46.0,1000.0,51.0,692
+Rasmussen (Pulse Opinion Research),0.93,lv,2022-05-15,42.0,1500.0,56.0,277
 Rasmussen (Pulse Opinion Research),0.93,lv,2022-05-12,41.0,1500.0,57.0,277
 Rasmussen (Pulse Opinion Research),0.93,lv,2022-05-11,40.0,1500.0,58.0,277
 Ipsos,1.05,a,2022-05-10,42.39,1005.0,50.39,154
